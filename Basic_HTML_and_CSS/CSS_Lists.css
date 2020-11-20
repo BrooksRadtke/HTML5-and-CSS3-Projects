@@ -1,0 +1,10 @@
+/*ordered list items are with roman numerals*/
+ol
+{
+list-style-type: upper-roman;
+}
+/*bullet points have squares*/
+ul
+{
+list-style-type: square;
+}

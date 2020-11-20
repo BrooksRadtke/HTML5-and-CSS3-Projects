@@ -1,0 +1,23 @@
+/*table border*/
+table
+{
+	border: 1px solid silver;
+}
+/*hover colors: must have BOTH defined attributes to function*/
+td:hover
+{
+	background-color: LightSlateGrey;
+	color: white;
+}
+/*background color*/
+tr, th
+{
+	background-color: BlanchedAlmond;
+	color: black;
+}
+tr, td
+{
+	background-color: GhostWhite;
+	color: Maroon;
+}
+
