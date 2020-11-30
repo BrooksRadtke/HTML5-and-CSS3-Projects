@@ -1,12 +1,12 @@
-@media screen and (max-width: 600)
+p
+{
+    color: rgb(219, 15, 0);
+}
+
+@media screen and (max-width: 600px)
 {
     p
     {
         color: blue;
     }
-}
-
-p
-{
-    color: rgb(219, 15, 0);
 }
