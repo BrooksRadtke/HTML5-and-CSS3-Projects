@@ -3,8 +3,10 @@
 	<head>
 		<title>Basic Template</title>
 		<meta charset="utf-8">
+		<script src="JS/one_page_website.js" defer></script>
 		<link rel="stylesheet" href="./CSS/shared.css">
 		<link rel="stylesheet" href="./CSS/animations.css">
+		<link rel="stylesheet" type="text/css" href="CSS/lightbox.css">
 	</head>
 	<body>
 		<!--Nav-->
@@ -40,7 +42,7 @@
 					<!--Photo Container 1-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_1.jpg" alt="">
+							<img src="./Images/Thumb/thumbnail_1.jpg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div class="photo-overlay">
 								<h3>World Building</h3>
 								<p>Need help visualizing your story? Talk to us about seeing it realized!</p>
@@ -156,6 +158,31 @@
 						</div>
 					</div>
 					<!--End Photo Container 10-->
+				</div>
+				<!-- MODAL LIGHTBOX -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numberText">1/10</div>
+							<img src="./Images/Thumb/thumbnail_1.jpg" style="width:100%">
+						</div>
+
+						<!-- Next/Previous Buttons -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!-- Caption Text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+						<!-- Thumbnail Image Controls -->
+						<div class="column">
+							<img class="gallery image" src="Images/Thumb/thumbnail_1.jpg" onclick="currentSlide(1)" alt="World Building">
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
