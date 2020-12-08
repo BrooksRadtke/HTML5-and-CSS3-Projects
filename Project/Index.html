@@ -42,8 +42,8 @@
 					<!--Photo Container 1-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_1.jpg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
-							<div class="photo-overlay">
+							<img src="./Images/Thumb/thumbnail_1.jpg" alt="" class="hover-shadow">
+							<div class="photo-overlay" onclick="openModal();currentSlide(1)">
 								<h3>World Building</h3>
 								<p>Need help visualizing your story? Talk to us about seeing it realized!</p>
 							</div>
@@ -55,7 +55,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Images/Thumb/thumbnail_2.jpg" alt="">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(2)">
 								<h3>Mood</h3>
 								<p>A pixeled-picture is worth a thousand words; we can help the mood to tell your story</p>
 							</div>
@@ -67,7 +67,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Images/Thumb/thumbnail_3.jpg" alt="">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(3)">
 								<h3>Buildings</h3>
 								<p>Extravagant or dreary, we love buildings!</p>
 							</div>
@@ -79,7 +79,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Images/Thumb/thumbnail_4.jpg" alt="">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(4)">
 								<h3>UI</h3>
 								<p>You would never know how many lives you've lost without the proper icons. We can help!</p>
 							</div>
@@ -91,7 +91,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Images/Thumb/thumbnail_5.jpg" alt="">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(5)">
 								<h3>Complex Scenes</h3>
 								<p>Looking for something a little different? Let us know your needs!</p>
 							</div>
@@ -103,7 +103,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Images/Thumb/thumbnail_6.jpg" alt="">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(6)">
 								<h3>Props</h3>
 								<p>Sword? Check! Loot? Check! Whatever your story needs, we can fill in the details!</p>
 							</div>
@@ -115,7 +115,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Images/Thumb/thumbnail_7.jpg" alt="">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(7)">
 								<h3>Custom Scenes</h3>
 								<p>Looking for more control to build your world? Talk to us about modular designs to best suit your needs!</p>
 							</div>
@@ -127,7 +127,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Images/Thumb/thumbnail_8.jpg" alt="">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(8)">
 								<h3>Character Design</h3>
 								<p>Heroic, villianous, or just another face in the crowd, our team takes extra care to design to your needs</p>
 							</div>
@@ -139,7 +139,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Images/Thumb/thumbnail_9.jpg" alt="">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(9)">
 								<h3>Interior Scenes</h3>
 								<p>Need a detailed interior? No problem! We'll help you furbish the place!</p>
 							</div>
@@ -151,7 +151,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./Images/Thumb/thumbnail_10.jpg" alt="">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(10)">
 								<h3>GIF Scenes</h3>
 								<p>Animation experienced to bring your project to life!</p>
 							</div>
@@ -161,7 +161,7 @@
 				</div>
 				<!-- MODAL LIGHTBOX -->
 				<div id="myModal" class="modal">
-					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<span class="close cursor"></span>
 					<div class="modal-content">
 
 						<div class="mySlides">
@@ -172,6 +172,46 @@
 						<div class="mySlides">
 							<div class="numberText">2/10</div>
 							<img src="./Images/Thumb/thumbnail_2.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numberText">3/10</div>
+							<img src="./Images/Thumb/thumbnail_3.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+							<div class="numberText">4/10</div>
+							<img src="./Images/Thumb/thumbnail_4.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+							<div class="numberText">5/10</div>
+							<img src="./Images/Thumb/thumbnail_5.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+							<div class="numberText">6/10</div>
+							<img src="./Images/Thumb/thumbnail_6.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+							<div class="numberText">7/10</div>
+							<img src="./Images/Thumb/thumbnail_7.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+							<div class="numberText">8/10</div>
+							<img src="./Images/Thumb/thumbnail_8.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+							<div class="numberText">9/10</div>
+							<img src="./Images/Thumb/thumbnail_9.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+							<div class="numberText">10/10</div>
+							<img src="./Images/Thumb/thumbnail_10.jpg" style="width:100%">
 						</div>
 
 						<!-- Next/Previous Buttons -->
