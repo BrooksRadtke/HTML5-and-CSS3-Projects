@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text" href="fade-out.css">
 	<body>
-	<!--includes section-->
-	<section>
-	<!--includes &nbsp-->
-	<p>It's 2:15&nbsp;PM. Thank God it's Friday</p>
-	</section>
-	<!--includes break-->
-	<br>
-	<section>
-	<!--includes span tag-->
-	<p> But that means I'll have to wait until <span style="font-style: italic; font-weight:bold">Monday of next week</span> to continue working on my course work with the Tech Academy&#169;...</p>
-	</section>
+		<!--includes section-->
+		<section>
+		<!--includes &nbsp-->
+		<p>It's 2:15&nbsp;PM. Thank God it's Friday</p>
+		</section>
+		<!--includes break-->
+		<br>
+		<section>
+		<!--includes span tag-->
+		<p> But that means I'll have to wait until <span style="font-style: italic; font-weight:bold">Monday of next week</span> to continue working on my course work with the Tech Academy&#169;...</p>
+		</section>
+		<button class="btn1">Fade Out</button>
+		<button class="btn2">Fade In</button>
+	<script>
+		$(document).ready(function()
+		{
+			$('.btn1').click(function()
+			{
+				$('p').fadeOut();
+			});
+			$('.btn2').click(function()
+			{
+				$('p').fadeIn();
+			});
+		});
+	</script>
 	</body>
 </html>
